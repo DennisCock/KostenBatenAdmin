@@ -38,6 +38,7 @@ public class LoginPanel extends BorderPane{
             Logger.getLogger(LoginPanel.class.getName()).log(Level.SEVERE, null, ex);
             throw new RuntimeException(ex.getMessage());
         }
+        lblError.setVisible(false);
     }
     
     @FXML
@@ -54,6 +55,7 @@ public class LoginPanel extends BorderPane{
         {
             //test, wijzigen naar effectieve login methode
             lblError.setText("logged in");
+            lblError.setVisible(true);
         }
     }
     
@@ -69,6 +71,8 @@ public class LoginPanel extends BorderPane{
         else
         {
             lblError.setText("Gelieve een geldig emailadres op te geven");
+            lblError.setVisible(true);
+
             return false;
         }
     }
