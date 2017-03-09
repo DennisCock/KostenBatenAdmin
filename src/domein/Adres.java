@@ -5,7 +5,7 @@ public class Adres {
     private int postcode;
     private int huisnummer;
     private String straatnaam;
-    private int busnummer;
+    private String busnummer;
 
     public String getPlaatsnaam() {
         return plaatsnaam;
@@ -39,11 +39,11 @@ public class Adres {
         this.straatnaam = straatnaam;
     }
 
-    public int getBusnummer() {
+    public String getBusnummer() {
         return busnummer;
     }
 
-    public void setBusnummer(int busnummer) {
+    public void setBusnummer(String busnummer) {
         this.busnummer = busnummer;
     }
     
