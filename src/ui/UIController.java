@@ -17,11 +17,13 @@ public class UIController {
         
 
         Scene scenelogin = new Scene(new LoginPanel());
-        //Scene scenetool = new Scene(new ToolPanel());
+        Scene scenetool = new Scene(new ToolPanel());
         
         
         
         stage.setScene(scenelogin);
+        
+        stage.setScene(scenetool);
         stage.setTitle("Kairos");
         stage.setMinWidth(500);
         stage.setMinHeight(300);
