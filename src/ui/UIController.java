@@ -23,8 +23,8 @@ public class UIController {
         
         stage.setScene(scenelogin);
         
-        stage.setScene(scenetool);
-        stage.setTitle("Kairos");
+        //stage.setScene(scenetool);
+        stage.setTitle("Kairos Admin Tool");
         stage.setMinWidth(500);
         stage.setMinHeight(300);
         stage.show();
