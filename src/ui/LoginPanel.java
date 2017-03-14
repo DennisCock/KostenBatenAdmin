@@ -7,11 +7,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 public class LoginPanel extends BorderPane{
     
@@ -26,6 +28,8 @@ public class LoginPanel extends BorderPane{
     
     @FXML
     PasswordField pwfWachtwoord;
+    
+    UIController uic;
 
     public LoginPanel() {
 
@@ -54,8 +58,8 @@ public class LoginPanel extends BorderPane{
         if(validateEmail())
         {
             //test, wijzigen naar effectieve login methode
-            lblError.setText("logged in");
-            lblError.setVisible(true);
+            Stage stage = (Stage) btnLogin.getScene().getWindow();
+            stage.setScene(new Scene(new ToolPanel()));
         }
     }
     

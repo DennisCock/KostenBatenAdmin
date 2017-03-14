@@ -22,6 +22,7 @@ public class ToolPanel extends BorderPane{
         }
         
         this.setTop(new HeaderPanel());
+        this.setLeft(new ButtonPanel());
 
         
     }
